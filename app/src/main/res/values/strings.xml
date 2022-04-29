@@ -1,3 +1,11 @@
 <resources>
     <string name="app_name">ExoPlayer</string>
+
+    <!-- Menu activity -->
+    <string name="menu_title">ACTIONS</string>
+    <string name="btn_flow">Diffuser</string>
+    <string name="video_button">VIDEOS</string>
+    <string name="audio_button">AUDIOS</string>
+    <string name="device_name">Device : </string>
+    <string name="device_id"> ID : </string>
 </resources>
