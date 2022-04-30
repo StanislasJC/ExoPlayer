@@ -22,7 +22,7 @@
         android:layout_marginStart="25dp"
         android:layout_marginTop="10dp"
         android:src="@drawable/streamax_watermark"
-        android:rotation="180"
+        android:rotation="0"
         />
 
 
