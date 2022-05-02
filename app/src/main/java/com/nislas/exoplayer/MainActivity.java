@@ -33,8 +33,12 @@ public class MainActivity extends Activity {
     String videoVortexURL = "https://static.videezy.com/system/resources/previews/000/051/885/original/200806-LoopSwirlDarkLight.mp4";
     String videoTransitionURL = "https://static.videezy.com/system/resources/previews/000/045/828/original/transition_green_bg.mp4";
     String videoGeometryMotionLoop = "https://static.videezy.com/system/resources/previews/000/050/266/original/200626-LoopColorFulMesh2.mp4";
+    String videoFireURL = "https://static.videezy.com/system/resources/previews/000/021/342/original/Flame_Wall.mp4";
+    String videoFireworksURL = "https://static.videezy.com/system/resources/previews/000/005/420/original/fireworks.mp4";
+    String videoRocketURL = "https://static.videezy.com/system/resources/previews/000/043/912/original/Paper_art_Rocket.mp4";
+    String videoShapesURL = "https://static.videezy.com/system/resources/previews/000/050/586/original/alb_kaleido1006_1080p_24fps.mp4";
 
-    //String audioStreamingURL = "https://stream.audioxi.com/SW";
+
 
     //BEGIN : TO CHANGE\\
 
@@ -47,6 +51,7 @@ public class MainActivity extends Activity {
 
     //Movies playlist
     List<String> moviesPlaylist = new ArrayList<>();
+
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
@@ -67,9 +72,10 @@ public class MainActivity extends Activity {
         moviesPlaylist.add(videoVortexURL);
         moviesPlaylist.add(videoTransitionURL);
         moviesPlaylist.add(videoGeometryMotionLoop);
-        //moviesPlaylist.add(audioStreamingURL);
-
-
+        moviesPlaylist.add(videoFireURL);
+        moviesPlaylist.add(videoFireworksURL);
+        moviesPlaylist.add(videoShapesURL);
+        moviesPlaylist.add(videoRocketURL);
 
 
         //Getting the size of the list
@@ -79,12 +85,7 @@ public class MainActivity extends Activity {
 
         exoPlayerSetup(lengthPlaylist);
 
-        watermark.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                openMenuActivity();
-            }
-        });
+        watermark.setOnClickListener(view -> openMenuActivity());
 
     }
 
@@ -119,12 +120,11 @@ public class MainActivity extends Activity {
                 exoPlayer.play();
             }
 
-
-
         }catch(Exception e) {
             Log.e("TAG", "ERROR : " + e);
         }
     }
+
 
     public void openMenuActivity(){
         exoPlayer.stop();
