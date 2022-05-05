@@ -39,29 +39,24 @@ public class MenuActivity extends AppCompatActivity {
         device_name = findViewById((R.id.device_name));
         device_name.setText(deviceName());
         device_id = findViewById(R.id.device_id);
-        device_id.setText(deviceID());
+        device_id.setText(uniqueId());
 
 
         //Launching the video activity on video button click
-        videoButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                openVideosActivity();
-            }
-        });
+        videoButton.setOnClickListener(view -> openVideosActivity());
 
         //Launching the audio activity on audio button click
-        audioButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                openAudiosActivity();
-            }
-        });
+        audioButton.setOnClickListener(view -> openAudiosActivity());
 
     }
     public String deviceName() {
-        String finalText =  Build.MANUFACTURER+" "+ Build.DEVICE;
-        return finalText;
+        return Build.MANUFACTURER+" "+ Build.DEVICE;
+    }
+
+    @SuppressLint("HardwareIds")
+    public String uniqueId() {
+        return Settings.Secure.getString(this.getContentResolver(),
+                Settings.Secure.ANDROID_ID);
     }
 
     @SuppressLint("HardwareIds")

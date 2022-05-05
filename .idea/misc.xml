@@ -3,11 +3,15 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="app/src/main/res/drawable/logo_animation.xml" value="0.13395538330078127" />
+        <entry key="app/src/main/res/drawable/logo_animation_back.xml" value="0.1425" />
         <entry key="app/src/main/res/font-v26/poppins.xml" value="0.14739583333333334" />
         <entry key="app/src/main/res/font/poppins.xml" value="0.20416666666666666" />
         <entry key="app/src/main/res/layout/activity_audio.xml" value="0.17135416666666667" />
+        <entry key="app/src/main/res/layout/activity_loader.xml" value="0.19454803466796877" />
+        <entry key="app/src/main/res/layout/activity_login.xml" value="0.15520833333333334" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.19610507246376813" />
-        <entry key="app/src/main/res/layout/activity_menu.xml" value="1.1665145874023437" />
+        <entry key="app/src/main/res/layout/activity_menu.xml" value="0.2273381294964029" />
         <entry key="app/src/main/res/layout/activity_tv.xml" value="0.1" />
       </map>
     </option>

@@ -72,6 +72,7 @@ public class AudioActivity extends AppCompatActivity {
         audioPlaylist.add(songHelix6URL);
         audioPlaylist.add(songHelix7URL);
         audioPlaylist.add(songHelix8URL);
+        audioPlaylist.add(audioStreamingURL);
 
         int audioPlaylistLength = audioPlaylist.size();
 

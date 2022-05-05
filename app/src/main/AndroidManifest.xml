@@ -10,7 +10,7 @@
         android:required="true" /> <!-- Internet permission and network access permission -->
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
-    <uses-permission android:name="android.permission.READ_MEDIA_AUDIO"/>
+    <uses-permission android:name="android.permission.READ_MEDIA_AUDIO" />
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
     <uses-permission android:name="android.permission.READ_PHONE_NUMBERS" />
     <uses-permission android:name="android.permission.READ_PHONE_STATE" />
@@ -24,15 +24,14 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.ExoPlayer">
         <activity
-            android:name=".AudioActivity"
-            android:exported="true"
-            android:screenOrientation="reverseLandscape"/>
+            android:name=".LoaderActivity"
+            android:exported="false" />
         <activity
-            android:name=".MenuActivity"
-            android:exported="true"
-            android:screenOrientation="reverseLandscape">
+            android:name=".LoginActivity"
+            android:exported="true">
             <intent-filter>
-                <action android:name="android.intent.action.MAIN"/>
+                <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
             <intent-filter>
@@ -42,9 +41,14 @@
             </intent-filter>
         </activity>
         <activity
+            android:name=".AudioActivity"
+            android:exported="true" />
+        <activity
+            android:name=".MenuActivity"
+            android:exported="true" />
+        <activity
             android:name=".MainActivity"
-            android:exported="true"
-            android:screenOrientation="reverseLandscape" />
+            android:exported="true" />
     </application>
 
 </manifest>

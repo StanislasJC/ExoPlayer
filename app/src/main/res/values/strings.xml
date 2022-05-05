@@ -1,11 +1,27 @@
 <resources>
-    <string name="app_name">ExoPlayer</string>
+    <string name="app_name">Streamax</string>
+
 
     <!-- Menu activity -->
     <string name="menu_title">ACTIONS</string>
     <string name="btn_flow">Diffuser</string>
     <string name="video_button">VIDEOS</string>
     <string name="audio_button">AUDIOS</string>
-    <string name="device_name">Device : </string>
+
+
+
+    <!-- Login Activity -->
+    <string name="code">Code</string>
+    <string name="login_button_text">Confirmer</string>
+
+    <!-- Loader Activity -->
+    <string name="countdown_sentence_first_part">La diffusion va commencer dans</string>
+    <string name="countdown_sentence_second_part">secondes</string>
+    <string name="parameters">Paramètres</string>
+    <string name="device_name">APPAREIL : </string>
     <string name="device_id"> ID : </string>
+    <string name="streamax_version">VERSION : </string>
+
+
+
 </resources>
