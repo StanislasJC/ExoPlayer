@@ -24,14 +24,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.ExoPlayer">
         <activity
-            android:name=".LoaderActivity"
-            android:exported="false" />
-        <activity
             android:name=".LoginActivity"
-            android:exported="true">
+            android:exported="true"
+            android:screenOrientation="reverseLandscape"
+            android:theme="@style/Theme.Leanback">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
             <intent-filter>
@@ -42,13 +40,20 @@
         </activity>
         <activity
             android:name=".AudioActivity"
-            android:exported="true" />
+            android:exported="true"
+            android:screenOrientation="reverseLandscape"/>
         <activity
             android:name=".MenuActivity"
-            android:exported="true" />
+            android:exported="true"
+            android:screenOrientation="reverseLandscape"/>
         <activity
             android:name=".MainActivity"
-            android:exported="true" />
+            android:exported="true"
+            android:screenOrientation="reverseLandscape"/>
+        <activity
+            android:name=".LoaderActivity"
+            android:exported="false"
+            android:screenOrientation="reverseLandscape"/>
     </application>
 
 </manifest>
