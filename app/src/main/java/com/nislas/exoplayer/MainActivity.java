@@ -93,7 +93,7 @@ public class MainActivity extends Activity {
                 exoPlayer.addMediaItem(item);
             }
             //Repeat mode
-            exoPlayer.setRepeatMode(Player.REPEAT_MODE_ALL);
+            exoPlayer.setRepeatMode(exoPlayer.REPEAT_MODE_ALL);
             //Random mode
             exoPlayer.setShuffleModeEnabled(true);
             //Preparing the ExoPlayer instance
